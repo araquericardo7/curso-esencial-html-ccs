@@ -1,6 +1,15 @@
+@font-face{
+  font-family: Roboto;
+  src:;
+  font-style: ;
+  font-weight: ;
+}
+
 :root {font-size: 18px;}
 
-body { color:#212121;}
+body { color:#212121;
+font-family:"Roboto";
+font-family: 'Roboto', sans-serif;}
 
 
 a {color: #212121}
@@ -24,6 +33,12 @@ h3{font-size: 1,5em;}
 
 nav details summary{font-weight: bold;}
 
+pre{background:#FEC62E;}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .3) ,transparent), url("../image/pattern.png");
+  height: 350px;
+}
 
 
 
