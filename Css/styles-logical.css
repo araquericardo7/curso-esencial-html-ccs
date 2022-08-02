@@ -1,0 +1,68 @@
+@font-face{
+  font-family: Roboto;
+  src:;
+  font-style: ;
+  font-weight: ;
+}
+
+:root {font-size: 18px;}
+
+body { color:#212121;
+font-family:"Roboto";
+font-family: 'Roboto', sans-serif;}
+
+
+a {color: #212121}
+
+
+h1 {
+  font-size: 3.75em;
+  font-size: 60px;}
+
+
+header{font-size: 14px;
+color:#616161;}
+
+header a {color:#616161;
+text-decoration: none;
+}
+header a:hover {color: #212121; }
+
+h2{font-size: 2em;}
+h3{font-size: 1,5em;}
+
+nav details summary{font-weight: bold;}
+
+pre{background:#FEC62E;}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .3) ,transparent), url("../image/pattern.png");
+  height: 350px;
+}
+
+.section-content{
+counter-reset: titlelist;
+
+}
+
+
+
+.section-content h3{
+  counter-increment: titlelist;
+
+}
+
+
+.section-content h3::before {
+  content:counter(titlelist, decimal);
+
+}
+
+.section-content h3::after {
+  content:"";
+width: 32px;
+height: 4px;
+background: black;
+display: inline-block;
+}
+
